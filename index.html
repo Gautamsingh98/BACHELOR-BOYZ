@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bachelor Boyz</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Login Overlay -->
+  <!-- <div id="loginOverlay" class="overlay">
+    <div class="login-card">
+      <h2>Student Login</h2>
+      <input type="text" id="username" placeholder="Enter your name">
+      <input type="email" id="email" placeholder="Enter your email">
+      <button onclick="login()">Login</button>
+    </div>
+  </div> -->
+
+<!-- Website Content -->
+<header>
+  <h1 id="typingText">🎓 BACHELOR BOYZ</h1>
+</header>
+
+
+<!-- NAVBAR -->
+<nav>
+  <ul>
+    <li><a href="/index.html">HOME</a></li>
+    <li><a href="" id="homeBtn">ABOUT</a></li>
+
+    <!-- SYLLABUS -->
+    <li>
+      <button>SYLLABUS ▾</button>
+      <ul class="dropdown-content">
+        <li>
+          <a href="#">BIT ▸</a>
+          <ul class="submenu">
+            <li><a href="https://drive.google.com/file/d/1BnHhsX9tryuUBBP8zOzw7yHIw7gfoA3I/view?usp=drive_link" onclick="openSemester('BIT',1)">Semester 1</a></li>
+            <li><a href="https://drive.google.com/file/d/1jGjSvVMZXu0D1TkLanYMHwtr2ZJLwRrw/view?usp=drive_link" onclick="openSemester('BIT',2)">Semester 2</a></li>
+            <li><a href="https://drive.google.com/file/d/15e6Xsrt4jBN-MxOxSdiJBZdZ1FSZ6-ax/view?usp=drive_link" onclick="openSemester('BIT',3)">Semester 3</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1t7pl0YfLAc0H3QRzw2izG_k3_vCaDhGt?usp=drive_link" onclick="openSemester('BIT',4)">Semester 4</a></li>
+            <li><a href="https://drive.google.com/file/d/1OAhWGfeGpKXwq4mTJRMeJeXNgPgVCQv4/view?usp=drive_link" onclick="openSemester('BIT',5)">Semester 5</a></li>
+            <li><a href="https://drive.google.com/file/d/1Mk8bHm3GWlSs1wBdxUeFRvmeh5y9Wt1V/view?usp=drive_link" onclick="openSemester('BIT',6)">Semester 6</a></li>
+            <li><a href="https://drive.google.com/file/d/1w0bUd1X12qS9SfaMDFNVgzeTipAC08-H/view?usp=drive_link" onclick="openSemester('BIT',7)">Semester 7</a></li>
+            <li><a href="#" onclick="openSemester('BIT',8)">Semester 8</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">BCA-IT ▸</a>
+          <ul class="submenu">
+            <li><a href="https://drive.google.com/file/d/1BLmuJa5R75kNqWb8npmcZy5u9NHLgt0F/view?usp=drive_link" onclick="openSemester('BCA',1)">Semester 1</a></li>
+            <li><a href="https://drive.google.com/file/d/182Y7CHgQeJHyAkFJTToiyQza9_GAPF9x/view?usp=drive_link" onclick="openSemester('BCA',2)">Semester 2</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1uoFPCWwNQCF1kNoL367_qdwVPAgnyfA1?usp=drive_link" onclick="openSemester('BCA',3)">Semester 3</a></li>
+            <li><a href="https://drive.google.com/drive/folders/17uuhRU3PUKTQgy839z_aquEqhB909HEj?usp=drive_link" onclick="openSemester('BCA',4)">Semester 4</a></li>
+            <li><a href="https://drive.google.com/file/d/1RfWQcPL2G1HC2HCpy4aPlugkCgyv6S1j/view?usp=drive_link" onclick="openSemester('BCA',5)">Semester 5</a></li>
+            <li><a href="https://drive.google.com/file/d/17brWhk22xmjci7DjCIgfvkOQw_1TdD1w/view?usp=drive_link" onclick="openSemester('BCA',6)">Semester 6</a></li>
+            <li><a href="#" onclick="openSemester('BCA',7)">Semester 7</a></li>
+            <li><a href="#" onclick="openSemester('BCA',8)">Semester 8</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">B.Tech (AI) ▸</a>
+          <ul class="submenu">
+            <li><a href="https://drive.google.com/file/d/1_WWZhJrg9VP4LF44Knc5GC3GEvrF3VvH/view?usp=drive_link" onclick="openSemester('BTech-AI',1)">Semester 1</a></li>
+            <li><a href="https://drive.google.com/file/d/1Jw1OWOlHX-XZn461oIyawex4fvw5UBLx/view?usp=drive_link" onclick="openSemester('BTech-AI',2)">Semester 2</a></li>
+            <li><a href="https://drive.google.com/file/d/10LrvVaSEDlH9bEAYT1ShAxS3t4nL2sNi/view?usp=drive_link" onclick="openSemester('BTech-AI',3)">Semester 3</a></li>
+            <li><a href="#" onclick="openSemester('BTech-AI',4)">Semester 4</a></li>
+            <li><a href="#" onclick="openSemester('BTech-AI',5)">Semester 5</a></li>
+            <li><a href="#" onclick="openSemester('BTech-AI',6)">Semester 6</a></li>
+            <li><a href="#" onclick="openSemester('BTech-AI',7)">Semester 7</a></li>
+            <li><a href="#" onclick="openSemester('BTech-AI',8)">Semester 8</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <!-- NOTES -->
+    <li>
+      <button>NOTES ▾</button>
+      <ul class="dropdown-content">
+        <li>
+          <a href="#">BIT ▸</a>
+          <ul class="submenu">
+            <li><a href="#">Semester 1</a></li>
+            <li><a href="#">Semester 2</a></li>
+            <li><a href="#">Semester 3</a></li>
+            <li><a href="#">Semester 4</a></li>
+            <li><a href="#">Semester 5</a></li>
+            <li><a href="#">Semester 6</a></li>
+            <li><a href="#">Semester 7</a></li>
+            <li><a href="#">Semester 8</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">BCA-IT ▸</a>
+          <ul class="submenu">
+            <li><a href="#">Semester 1</a></li>
+            <li><a href="#">Semester 2</a></li>
+            <li><a href="#">Semester 3</a></li>
+            <li><a href="#">Semester 4</a></li>
+            <li><a href="#">Semester 5</a></li>
+            <li><a href="#">Semester 6</a></li>
+            <li><a href="#">Semester 7</a></li>
+            <li><a href="#">Semester 8</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">B.Tech (AI) ▸</a>
+          <ul class="submenu">
+            <li><a href="#">Semester 1</a></li>
+            <li><a href="#">Semester 2</a></li>
+            <li><a href="#">Semester 3</a></li>
+            <li><a href="#">Semester 4</a></li>
+            <li><a href="#">Semester 5</a></li>
+            <li><a href="#">Semester 6</a></li>
+            <li><a href="#">Semester 7</a></li>
+            <li><a href="#">Semester 8</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <!-- MODEL QUESTIONS -->
+    <li>
+      <button>MODEL QUESTIONS ▾</button>
+      <ul class="dropdown-content">
+        <li>
+          <a href="#">BIT ▸</a>
+          <ul class="submenu">
+            <li><a href="https://drive.google.com/drive/folders/1wMUfXc0FReBobR58R8aXYS2yY7nqSX1L?usp=drive_link">Semester 1</a></li>
+            <li><a href="https://drive.google.com/drive/folders/18jTUkCUw28lJ-eldPpw5SbUoNvbzj_eR?usp=drive_link">Semester 2</a></li>
+            <li><a href="https://drive.google.com/drive/folders/183pTV02FNXfhiID70tbnBsJKlD12nPda?usp=drive_link">Semester 3</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1XHWV-yti3DqGoZx--_hF6MvdBiSQxJre?usp=drive_link">Semester 4</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1iksmIcVRZX32zZ4OZm7CVQy7_t2IIpRp?usp=drive_link">Semester 5</a></li>
+            <li><a href="https://drive.google.com/drive/folders/16PI4icYCzA0fKZn2vpuD9rYBz25ahuul?usp=drive_link">Semester 6</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1L0bOjaS7R6_QWBrJTaWISJ7fZnyGcKDh?usp=drive_link">Semester 7</a></li>
+            <li><a href="#">Semester 8</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">BCA-IT ▸</a>
+          <ul class="submenu">
+            <li><a href="https://drive.google.com/drive/folders/1B0zsGFDfDeDt-2Tpw4kJ2CkBocFx86c2?usp=drive_link">Semester 1</a></li>
+            <li><a href="#">Semester 2</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1U3DIAuxefWttyXuOtJ0Xv52KUlQyJELq?usp=drive_link">Semester 3</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1yfv6LXhrQJSiUOj0NNg5VJcx8rSR1lYG?usp=drive_link">Semester 4</a></li>
+            <li><a href="#">Semester 5</a></li>
+            <li><a href="#">Semester 6</a></li>
+            <li><a href="#">Semester 7</a></li>
+            <li><a href="#">Semester 8</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">B.Tech (AI) ▸</a>
+          <ul class="submenu">
+            <li><a href="https://drive.google.com/drive/folders/1GJIhFR-BsMYyn5u-KCc6jSa5oELg_PCQ?usp=drive_link">Semester 1</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1f_4GT6GteiHt6RovutV3iAXyV5IZads7?usp=drive_link">Semester 2</a></li>
+            <li><a href="#">Semester 3</a></li>
+            <li><a href="#">Semester 4</a></li>
+            <li><a href="#">Semester 5</a></li>
+            <li><a href="#">Semester 6</a></li>
+            <li><a href="#">Semester 7</a></li>
+            <li><a href="#">Semester 8</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+<li><a href="https://pusat.edu.np" target="_blank" class="pusat-link"><img src="logo.png" alt="PUSAT Logo" class="pusat-logo">VISIT PUSAT WEBSITE</a></li></li>
+  </ul>
+</nav>
+
+
+
+<section class="hero-section">
+  <div class="hero-text">
+    <h1>Full Guide<br>For BIT, BCA-IT, B.Tech(AI)</h1>
+    <p>
+      Welcome to the journey to success in the field of Science and Technology. 
+      This website will guide you to learn the Bachelor's degree in Information 
+      and Technology. Here you will get all the best notes,syllabus and model questions from the professionals in this field.
+    </p>
+    <a href="#contact" class="contact-btn">Contact</a>
+  </div>
+  <div class="hero-image">
+    <img src="image.png" alt="BIT Students">
+  </div>
+</section>
+
+<!-- HOME IMAGE CARDS (Initially Hidden) -->
+<section class="home-cards" id="homeCards">
+  <div class="card">
+    <img src="dpk.jpeg" alt="Dipak Yadav">
+    <div class="card-info">
+    <h3>Dipak Yadav</h3>
+    <p>BIT</p>
+    <p>Rajbiraj,Nepal</p>
+    </div>
+  </div>
+
+  <div class="card">
+  <img src="gtm.jpeg" alt="Gautam Singh">
+  <div class="card-info">
+    <h3>Gautam Singh</h3>
+    <p>BIT</p>
+    <p>Rangeli, Nepal</p>
+  </div>
+</div>
+
+  <div class="card">
+    <img src="bheem.jpeg" alt="Bishmendra Kr Sah">
+    <div class="card-info">
+    <h3>Bishmendra Kr Sah</h3>
+    <p>BIT</p>
+    <p>Biratnagar,Nepal</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FEATURES SECTION -->
+<section class="features-section">
+  <h2 class="features-title">Features</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <i class="icon">📝</i>
+      <h3>NOTES</h3>
+      <p>Proper notes based on the syllabus.<br>
+      Highlighted with the exam point of view.</p>
+    </div>
+    <div class="feature-card">
+      <i class="icon">❓</i>
+      <h3>MODEL QUESTIONS</h3>
+      <p>All the previous year questions of all subjects are provided.</p>
+    </div>
+    <div class="feature-card">
+      <i class="icon">📘</i>
+      <h3>SYLLABUS</h3>
+      <p>Newly updated syllabus is provided with credit hours and practical marks.</p>
+    </div>
+  </div>
+</section>
+
+<br></br>
+<br></br>
+<section class="section_container contact_container" id="contact">
+    <div class="logo">BB</div>
+    <h2 class="section__header">Let's Grow Together!</h2>
+    <p class="section__description">
+      The best platform to learn IT degree.
+      With absolutely best syllabus,notes and model questions.
+    </p>
+<div class="social-icons">
+  <a href="https://www.facebook.com/share/1C3BbhLwsb/" target="_blank"><i class="ri-facebook-fill"></i></a>
+   <!-- <a href="#"><i class="ri-linkedin-fill"></i></a> -->
+  <a href="#"><i class="ri-youtube-fill"></i></a>  
+  <!-- <a href="#"><i class="ri-instagram-line"></i></a> -->
+  <a href="mailto:bachelorboyz03@gmail.com"><i class="ri-mail-fill"></i></a>
+  <a href="https://wa.me/9779764463079" target="_blank"><i class="ri-whatsapp-line"></i></a>
+</div>
+
+  </section>
+
+
+<footer>
+  <p>© 2025 Student Portal | BIT, BCA-IT, B.Tech (AI)</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
