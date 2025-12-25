@@ -46,16 +46,16 @@ window.addEventListener("DOMContentLoaded", () => {
   /* ===============================
      HEADING TYPING EFFECT (OPTIMIZED)
   ================================ */
-  const text = "🎓 BACHELOR BOYZ";
-  const element = document.getElementById("typingText");
-  let index = 0;
+  // const text = "🎓 BACHELOR BOYZ";
+  // const element = document.getElementById("typingText");
+  // let index = 0;
 
-  if (element) {
-    setInterval(() => {
-      element.textContent = text.slice(0, index++);
-      if (index > text.length) index = 0;
-    }, 200);
-  }
+  // if (element) {
+  //   setInterval(() => {
+  //     element.textContent = text.slice(0, index++);
+  //     if (index > text.length) index = 0;
+  //   }, 200);
+  // }
 
   /* ===============================
      HOME BUTTON + CARD SLIDER
@@ -113,6 +113,5 @@ window.addEventListener("DOMContentLoaded", () => {
         }
       }
     });
-  });
-
+  });  
 });
